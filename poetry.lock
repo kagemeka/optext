@@ -1062,7 +1062,7 @@ docs = ["sphinx", "furo", "myst-parser", "sphinx_rtd_theme", "sphinxcontrib-merm
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "d6c93aed545e68e1c2619abd455083dc49f6646ec0589110033db1881deb140e"
+content-hash = "6d2694d22178828998085d235af3ae8a8c308c5a4f60c0b8545f0a1a73baaaa0"
 
 [metadata.files]
 alabaster = [

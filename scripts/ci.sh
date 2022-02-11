@@ -8,7 +8,7 @@ get_current_file_directory() {
 
 root=$(dirname "$(get_current_file_directory)")
 
-"$root"/scripts/update.sh
+"$root"/scripts/update_env.sh
 "$root"/scripts/chmod_exec.sh
 "$root"/scripts/precommit.sh
 "$root"/scripts/format.sh
