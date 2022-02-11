@@ -1,10 +1,10 @@
-package\_2 package
-==================
+optext package
+==============
 
 Module contents
 ---------------
 
-.. automodule:: package_2
+.. automodule:: optext
    :members:
    :undoc-members:
    :show-inheritance:

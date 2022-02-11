@@ -10,7 +10,7 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
 ]
-description = ""
+description = "Extension of Optional type inspired by Rust Option<T>."
 documentation = ""
 exclude = [
   "**/tests/",
@@ -20,17 +20,16 @@ exclude = [
 ]
 homepage = ""
 include = []
-keywords = ["template", "python"]
+keywords = ["option", "python", "rust"]
 license = "MIT"
 maintainers = ["Hiroshi Tsuyuki <kagemeka1@gmail.com>"]
-name = "python-project-templates"
+name = "optext"
 packages = [
-  {include = "package_1", from = "src"},
-  {include = "package_2", from = "src"},
+  {include = "optext", from = "src"},
 ]
 readme = "README.md"
-repository = "https://github.com/kagemeka/"
-version = "0.1.1"
+repository = "https://github.com/kagemeka/optext"
+version = "0.1.0"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
