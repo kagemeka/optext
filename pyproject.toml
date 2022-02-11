@@ -10,7 +10,7 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
 ]
-description = ""
+description = "Extension of Optional type inspired by Rust Option<T>."
 documentation = ""
 exclude = [
   "**/tests/",
@@ -20,17 +20,16 @@ exclude = [
 ]
 homepage = ""
 include = []
-keywords = ["template", "python"]
+keywords = ["option", "python", "rust"]
 license = "MIT"
 maintainers = ["Hiroshi Tsuyuki <kagemeka1@gmail.com>"]
-name = "python-project-templates"
+name = "optext"
 packages = [
-  {include = "package_1", from = "src"},
-  {include = "package_2", from = "src"},
+  {include = "optext", from = "src"},
 ]
 readme = "README.md"
-repository = "https://github.com/kagemeka/"
-version = "0.1.1"
+repository = "https://github.com/kagemeka/optext"
+version = "0.1.0"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
@@ -82,21 +81,6 @@ pytest-asyncio = "^"
 types-PyYAML = "^"
 types-requests = "^"
 types-setuptools = "^"
-
-[tool.poetry.scripts]
-# commands listed here can be invoked from terminal.
-sample-command = "package_2.__main__:main" # run `sample-command`
-
-[tool.poetry.plugins."console_scripts"]
-# for details aboud plugins (or entry_points), see
-# https://python-poetry.org/docs/pyproject/#plugins
-# https://setuptools.pypa.io/en/latest/userguide/entry_point.html
-# https://docs.python.org/3/library/importlib.metadata.html
-# 'console_scripts' section is same to 'poetry.scripts'
-add-1-2 = "package_1.__main__:main"
-
-[tool.poetry.plugins."pseudo_package.plugin"]
-sample-plugin = "package_1.plugins:plugin_call"
 
 [tool.poetry.urls]
 "Twitter" = "https://twitter.com/kagemeka"

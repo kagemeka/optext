@@ -7,13 +7,13 @@ get_current_file_directory() {
 }
 
 root=$(dirname "$(get_current_file_directory)")
-docs_path="$root"/docs/sphinx
+docs_path="$root"/docs/api_sphinx
 src_path=$root/src
 
-rm -r "$root/docs/sphinx"
+rm -r "$docs_path"
 poetry run sphinx-apidoc \
     -d 2 \
-    -H "Python Project Templates" \
+    -H "Optext" \
     --separate \
     --follow-links \
     --full \
@@ -25,7 +25,8 @@ poetry run sphinx-apidoc \
     "$src_path"/**/test_*.py \
     "$src_path"/**/_test_*.py \
     "$src_path"/scripts/
-poetry run python src/scripts/generate_sphinx_conf.py \
+
+poetry run python "$root"/scripts/generate_sphinx_conf.py \
     --sphinx-docs-path="$docs_path"
 # full options
 # https://www.sphinx-doc.org/en/master/man/sphinx-apidoc.html

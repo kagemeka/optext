@@ -7,7 +7,7 @@ get_current_file_directory() {
 }
 
 root=$(dirname "$(get_current_file_directory)")
-docs_path="$root"/docs/sphinx
+docs_path="$root"/docs/api_sphinx
 
 poetry run make --directory="$docs_path" clean &&
     poetry run make --directory="$docs_path" html
