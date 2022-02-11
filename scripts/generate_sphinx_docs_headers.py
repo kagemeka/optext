@@ -11,6 +11,8 @@ SPHINX_DOCS_HEADER = "Optext"
 def _remove_current_docs(docs_path: str) -> None:
     try:
         shutil.rmtree(docs_path)
+    except Exception as e:
+        pass
     finally:
         pass
 
