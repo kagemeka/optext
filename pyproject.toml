@@ -23,7 +23,7 @@ include = []
 keywords = ["option", "python", "rust"]
 license = "MIT"
 maintainers = ["Hiroshi Tsuyuki <kagemeka1@gmail.com>"]
-name = "optext"
+name = "optext-python"
 packages = [
   {include = "optext", from = "src"},
 ]
